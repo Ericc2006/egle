@@ -14,3 +14,5 @@ rows = int(input("Cik liela eglīte? "))
 trunk_width = int(input("Cik resns stumbra resns? (ja vēlaties ievadīt stumbra resnuma, ievadiet skaitli, citādi ievadiet 1) "))
 tree_width = int(input("Cik plats eglīte? (ja vēlaties ievadīt platumu, ievadiet skaitli, citādi ievadiet 1) "))
 
+# Zīmē Ziemassvētku eglīti ar ievadītajiem parametriem
+draw_christmas_tree(rows, trunk_width, tree_width)
