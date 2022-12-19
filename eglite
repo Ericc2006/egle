@@ -1,0 +1,16 @@
+def draw_christmas_tree(rows, trunk_width=1, tree_width=1):
+  # Ziemassvētku eglītes zīmēšanas cikls
+  for i in range(rows):
+    # Izvēlas atbilstošu platumu atkarībā no rindas numura un ievadītā platumā
+    width = tree_width if i < rows-1 else tree_width-1
+    # Zīmē zvaigznīti ar atbilstošu platumu un atstarpēm
+    print(" "*(rows-i-1) + "*"*(2*i+1) + " "*(rows-i-1))
+  # Zīmē stumbru ar atbilstošu resnumu un platumu
+  for i in range(trunk_width):
+    print(" "*(rows-1) + "|"*trunk_width)
+
+# Pieprasa ievadīt rindu skaitu un stumbra resnumu un platumu (ja vēlas)
+rows = int(input("Cik liela eglīte? "))
+trunk_width = int(input("Cik resns stumbra resns? (ja vēlaties ievadīt stumbra resnuma, ievadiet skaitli, citādi ievadiet 1) "))
+tree_width = int(input("Cik plats eglīte? (ja vēlaties ievadīt platumu, ievadiet skaitli, citādi ievadiet 1) "))
+
