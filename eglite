@@ -4,7 +4,7 @@ def draw_christmas_tree(rows, trunk_width=1, tree_width=1):
     # Izvēlas atbilstošu platumu atkarībā no rindas numura un ievadītā platumā
     width = tree_width if i < rows-1 else tree_width-1
     # Zīmē zvaigznīti ar atbilstošu platumu un atstarpēm
-    print(" "*(rows-i-1) + "*"*(2*i+1) + " "*(rows-i-1))
+    print(" "*(rows-i-1) + "#"*(2*i+1) + " "*(rows-i-1))
   # Zīmē stumbru ar atbilstošu resnumu un platumu
   for i in range(trunk_width):
     print(" "*(rows-1) + "|"*trunk_width)
